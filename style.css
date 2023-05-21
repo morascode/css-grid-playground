@@ -1,0 +1,258 @@
+/* Contents of this file:
+  * 1.0 - Font imports
+  * 2.0 - Variables
+  * 3.0 - Global CSS
+  * 4.0 - Single-use Components
+  * 5.0 - Utility Classes
+  * 6.0 - Media Queries
+  */
+/* ========================================
+ * 1.0 - FONT IMPORTS 
+ * ======================================= */
+/* darker-grotesque-300 - latin */
+@font-face {
+	font-display: swap; /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
+	font-family: "Darker Grotesque";
+	font-style: normal;
+	font-weight: 300;
+	src: url("./public/fonts/darker-grotesque-v7-latin-300.eot"); /* IE9 Compat Modes */
+	src: url("./public/fonts/darker-grotesque-v7-latin-300.eot?#iefix")
+			format("embedded-opentype"),
+		/* IE6-IE8 */ url("./public/fonts/darker-grotesque-v7-latin-300.woff2")
+			format("woff2"),
+		/* Super Modern Browsers */
+			url("./public/fonts/darker-grotesque-v7-latin-300.woff") format("woff"),
+		/* Modern Browsers */
+			url("./public/fonts/darker-grotesque-v7-latin-300.ttf") format("truetype"),
+		/* Safari, Android, iOS */
+			url("./public/fonts/darker-grotesque-v7-latin-300.svg#DarkerGrotesque")
+			format("svg"); /* Legacy iOS */
+}
+/* darker-grotesque-regular - latin */
+@font-face {
+	font-display: swap; /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
+	font-family: "Darker Grotesque";
+	font-style: normal;
+	font-weight: 400;
+	src: url("./public/fonts/darker-grotesque-v7-latin-regular.eot"); /* IE9 Compat Modes */
+	src: url("./public/fonts/darker-grotesque-v7-latin-regular.eot?#iefix")
+			format("embedded-opentype"),
+		/* IE6-IE8 */ url("./public/fonts/darker-grotesque-v7-latin-regular.woff2")
+			format("woff2"),
+		/* Super Modern Browsers */
+			url("./public/fonts/darker-grotesque-v7-latin-regular.woff")
+			format("woff"),
+		/* Modern Browsers */
+			url("./public/fonts/darker-grotesque-v7-latin-regular.ttf")
+			format("truetype"),
+		/* Safari, Android, iOS */
+			url("./public/fonts/darker-grotesque-v7-latin-regular.svg#DarkerGrotesque")
+			format("svg"); /* Legacy iOS */
+}
+/* darker-grotesque-500 - latin */
+@font-face {
+	font-display: swap; /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
+	font-family: "Darker Grotesque";
+	font-style: normal;
+	font-weight: 500;
+	src: url("./public/fonts/darker-grotesque-v7-latin-500.eot"); /* IE9 Compat Modes */
+	src: url("./public/fonts/darker-grotesque-v7-latin-500.eot?#iefix")
+			format("embedded-opentype"),
+		/* IE6-IE8 */ url("./public/fonts/darker-grotesque-v7-latin-500.woff2")
+			format("woff2"),
+		/* Super Modern Browsers */
+			url("./public/fonts/darker-grotesque-v7-latin-500.woff") format("woff"),
+		/* Modern Browsers */
+			url("./public/fonts/darker-grotesque-v7-latin-500.ttf") format("truetype"),
+		/* Safari, Android, iOS */
+			url("./public/fonts/darker-grotesque-v7-latin-500.svg#DarkerGrotesque")
+			format("svg"); /* Legacy iOS */
+}
+/* darker-grotesque-600 - latin */
+@font-face {
+	font-display: swap; /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
+	font-family: "Darker Grotesque";
+	font-style: normal;
+	font-weight: 600;
+	src: url("./public/fonts/darker-grotesque-v7-latin-600.eot"); /* IE9 Compat Modes */
+	src: url("./public/fonts/darker-grotesque-v7-latin-600.eot?#iefix")
+			format("embedded-opentype"),
+		/* IE6-IE8 */ url("./public/fonts/darker-grotesque-v7-latin-600.woff2")
+			format("woff2"),
+		/* Super Modern Browsers */
+			url("./public/fonts/darker-grotesque-v7-latin-600.woff") format("woff"),
+		/* Modern Browsers */
+			url("./public/fonts/darker-grotesque-v7-latin-600.ttf") format("truetype"),
+		/* Safari, Android, iOS */
+			url("./public/fonts/darker-grotesque-v7-latin-600.svg#DarkerGrotesque")
+			format("svg"); /* Legacy iOS */
+}
+/* darker-grotesque-700 - latin */
+@font-face {
+	font-display: swap; /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
+	font-family: "Darker Grotesque";
+	font-style: normal;
+	font-weight: 700;
+	src: url("./public/fonts/darker-grotesque-v7-latin-700.eot"); /* IE9 Compat Modes */
+	src: url("./public/fonts/darker-grotesque-v7-latin-700.eot?#iefix")
+			format("embedded-opentype"),
+		/* IE6-IE8 */ url("./public/fonts/darker-grotesque-v7-latin-700.woff2")
+			format("woff2"),
+		/* Super Modern Browsers */
+			url("./public/fonts/darker-grotesque-v7-latin-700.woff") format("woff"),
+		/* Modern Browsers */
+			url("./public/fonts/darker-grotesque-v7-latin-700.ttf") format("truetype"),
+		/* Safari, Android, iOS */
+			url("./public/fonts/darker-grotesque-v7-latin-700.svg#DarkerGrotesque")
+			format("svg"); /* Legacy iOS */
+}
+/* darker-grotesque-800 - latin */
+@font-face {
+	font-display: swap; /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
+	font-family: "Darker Grotesque";
+	font-style: normal;
+	font-weight: 800;
+	src: url("./public/fonts/darker-grotesque-v7-latin-800.eot"); /* IE9 Compat Modes */
+	src: url("./public/fonts/darker-grotesque-v7-latin-800.eot?#iefix")
+			format("embedded-opentype"),
+		/* IE6-IE8 */ url("./public/fonts/darker-grotesque-v7-latin-800.woff2")
+			format("woff2"),
+		/* Super Modern Browsers */
+			url("./public/fonts/darker-grotesque-v7-latin-800.woff") format("woff"),
+		/* Modern Browsers */
+			url("./public/fonts/darker-grotesque-v7-latin-800.ttf") format("truetype"),
+		/* Safari, Android, iOS */
+			url("./public/fonts/darker-grotesque-v7-latin-800.svg#DarkerGrotesque")
+			format("svg"); /* Legacy iOS */
+}
+/* darker-grotesque-900 - latin */
+@font-face {
+	font-display: swap; /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
+	font-family: "Darker Grotesque";
+	font-style: normal;
+	font-weight: 900;
+	src: url("./public/fonts/darker-grotesque-v7-latin-900.eot"); /* IE9 Compat Modes */
+	src: url("./public/fonts/darker-grotesque-v7-latin-900.eot?#iefix")
+			format("embedded-opentype"),
+		/* IE6-IE8 */ url("./public/fonts/darker-grotesque-v7-latin-900.woff2")
+			format("woff2"),
+		/* Super Modern Browsers */
+			url("./public/fonts/darker-grotesque-v7-latin-900.woff") format("woff"),
+		/* Modern Browsers */
+			url("./public/fonts/darker-grotesque-v7-latin-900.ttf") format("truetype"),
+		/* Safari, Android, iOS */
+			url("./public/fonts/darker-grotesque-v7-latin-900.svg#DarkerGrotesque")
+			format("svg"); /* Legacy iOS */
+}
+/* ========================================
+ * 2.0 - VARIABLES
+ * ======================================= */
+:root {
+	--color-font-light: #fff;
+}
+/* ========================================
+ * 3.0 - GLOBAL CSS
+ * ======================================= */
+body {
+	background-color: #fff;
+	font-family: "Darker Grotesque", sans-serif;
+	font-weight: 900;
+}
+/* ========================================
+ * 4.0 - Single-use Components
+ * ======================================= */
+.calender {
+	margin: 2rem auto auto auto;
+	max-width: 44rem;
+	display: grid;
+	grid-template-columns: 1fr 1fr;
+	gap: 1rem;
+}
+.cl-main {
+	border: 2px solid black;
+	border-radius: 0.5rem;
+	background-color: #ff91e7;
+	padding: 2rem 1rem;
+	box-shadow: 6px 6px 0 #000;
+}
+.cl-main__header {
+	display: grid;
+	grid-template-columns: 4rem 1fr 4rem;
+	gap: 1rem;
+}
+.cl-main__header-title {
+	text-transform: uppercase;
+	text-align: center;
+	font-size: 1.25rem;
+}
+.cl-main-grid {
+	display: grid;
+	grid-template-columns: repeat(7, 1fr);
+	gap: 0.5rem;
+	margin: 1rem;
+}
+.cl-main-grid__item {
+	text-align: center;
+	padding: 0.25rem;
+	font-size: 1rem;
+	cursor: pointer;
+	border-radius: 1.5rem;
+	border: 2px solid transparent;
+}
+.cl-today {
+	border: 2px solid black;
+	border-radius: 0.5rem;
+	background-color: #ffc901;
+	padding: 3.25rem 1rem 3rem 1rem;
+	box-shadow: 6px 6px 0 #000;
+	display: grid;
+	grid-template-rows: 1fr auto 1fr;
+	justify-items: center;
+}
+.cl-today__title {
+	text-transform: uppercase;
+	font-size: 1.25rem;
+}
+.cl-today__main {
+	font-size: 6rem;
+}
+.cl-today__subtitle {
+	align-self: end;
+	text-transform: uppercase;
+	font-size: 2rem;
+}
+
+/* ========================================
+ * 5.0 - Utility classes
+ * ======================================= */
+.--grid-day-label {
+	padding: 0.5rem 0.25rem 0 0.25rem;
+	text-transform: uppercase;
+	cursor: default;
+}
+.--grid-day-past {
+	font-weight: 300;
+	color: #000;
+}
+.--grid-day-today {
+	background-color: #fff;
+	border: 2px solid black;
+	color: #000;
+	box-shadow: 3px 3px 0 #000;
+	transform: translate(-3px, -3px);
+}
+.--grid-day-today:hover {
+	box-shadow: 3px 3px 0 #000, 6px 6px 0 #fff;
+	transform: translate(-6px, -6px);
+}
+.--grid-day-future {
+	color: #000;
+	font-weight: 600;
+}
+.--grid-day-past:hover,
+.--grid-day-future:hover {
+	background-color: #ffc901;
+	box-shadow: 3px 3px 0 #000;
+	border: 2px solid black;
+	transform: translate(-3px, -3px);
+}
